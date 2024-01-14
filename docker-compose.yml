@@ -1,0 +1,14 @@
+services:
+  rmd:
+    image: ghcr.io/julienjoannic/RebootMadDevice/RebootMadDevice:main
+    container_name: RebootMadDevice
+    restart: unless-stopped
+    tty: true
+    volumes:
+	  - /mnt/usr/app/rebootmaddevice/config.ini:/app/config.ini
+	  - /mnt/usr/app/rebootmaddevice/devices.json:/app/devices.json
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "100MB"
+        max-file: "10"
