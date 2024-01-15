@@ -66,7 +66,7 @@ class rmdConfig(object):
     
         # read json file
         logging.debug("Read data from devices.json file.")
-        with open('config/devices.json') as json_file:
+        with open('devices.json') as json_file:
            _jsondata = json.load(json_file) 
     
         # init rmd data in dict
