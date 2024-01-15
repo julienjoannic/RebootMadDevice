@@ -1,4 +1,4 @@
-#!/usr/bin/env /bin/python3
+#!/usr/bin/env /usr/local/bin/python
 #
 # RebootMadDevices
 # Script to restart ATV devices which are not responsable
