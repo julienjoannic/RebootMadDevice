@@ -326,4 +326,4 @@ if __name__ == '__main__':
         logging.info("import GPIO libs")
         import RPi.GPIO as GPIO
 
-    rmdConfig.doRebootDevice(DEVICE_ORIGIN_TO_REBOOT)
+    rmdConfig.doRebootDevice(main())
