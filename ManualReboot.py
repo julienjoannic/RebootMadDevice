@@ -308,7 +308,7 @@ class rmdConfig(object):
 
 def create_stdout_log():
     logging.basicConfig(format='%(asctime)s %(levelname)-8s %(message)s',
-                        level=logging.getLevelName(log_level))
+                        level=logging.getLevelName("INFO"))
     logger = logging.getLogger(__name__)
     stdout_handler = logging.StreamHandler(sys.stdout)
     logger.addHandler(stdout_handler)
