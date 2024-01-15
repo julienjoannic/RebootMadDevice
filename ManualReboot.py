@@ -48,7 +48,7 @@ def main():
 class rmdConfig(object):
     _config = configparser.ConfigParser()
     _rootdir = os.path.dirname(os.path.abspath('config.ini'))
-    _config.read(_rootdir + "//config/config.ini")
+    _config.read(_rootdir + "//config.ini")
     _gpio_usage = _config.get("GPIO", "GPIO_USAGE")
     _adb_path = _config.get("ENVIROMENT", "ADB_PATH", fallback='/usr/bin')
     _adb_port = _config.get("ENVIROMENT", "ADB_PORT", fallback='5555')
